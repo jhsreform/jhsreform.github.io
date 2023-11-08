@@ -17,6 +17,8 @@ html{
 
 .mainContent {
     margin-bottom: 20%;
+    width: 95%;
+    align-self: center;
 }
 
 .sideImg {
@@ -38,6 +40,7 @@ html{
 
 .scrollbars {
     overflow: auto;
+    width: 95%;
 }
 
 .reform {
