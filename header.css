@@ -1,0 +1,10 @@
+.Header {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.HomeButton {
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 159.086 42.3179" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path d="M0 42.3179L159.086 0L0 0L0 42.3179Z" id="Fill"/>
+</defs>
+<g id="Layer-1" vectornator:layerName="Layer 1">
+<g opacity="1" vectornator:layerName="Curve 1">
+<mask height="42.3179" id="StrokeMask" maskUnits="userSpaceOnUse" width="159.086" x="0" y="0">
+<rect fill="#000000" height="42.3179" stroke="none" width="159.086" x="0" y="0"/>
+<use fill="#ffffff" fill-rule="evenodd" stroke="none" xlink:href="#Fill"/>
+</mask>
+<use fill="none" mask="url(#StrokeMask)" stroke="#5b0003" stroke-linecap="butt" stroke-linejoin="round" stroke-width="100" xlink:href="#Fill"/>
+</g>
+</g>
+</svg>
