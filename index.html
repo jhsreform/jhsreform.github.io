@@ -22,6 +22,9 @@ crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="theme-black.css">
     <link rel="stylesheet" href="font-awesome.css">
+
+
+    <script src="index.js"></script>
 </head>
 <body>
 
@@ -29,8 +32,31 @@ crossorigin="anonymous"></script>
 <header class="w3-container w3-theme w3-padding" id="myHeader">
     <!-- Side Navigation -->
 <a href="#" class="bar-item button" style="cursor: not-allowed;">Resources</a>
-<a href="#" class="bar-item button" style="cursor: not-allowed;">Merchandise</a>
-<a href="#" class="bar-item button" style="cursor: not-allowed;">Contact</a>
+<a href="./merchandise.html" class="bar-item button" style="cursor: not-allowed;">Merchandise</a>
+<button class="button w3-hover-light-grey main-btn" onclick="document.getElementById('id02').style.display='block'" style="font-weight:300;">Contact</button>
+
+
+<div id="id02" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-theme-l1"> 
+      <span onclick="document.getElementById('id02').style.display='none'"
+      class="w3-button w3-display-topright">×</span>
+      <div class="scrollbars">
+        <h4>You can contact Reform JHS through Instagram, as well as our email at: jhsreformation@outlook.com</h4>
+        
+      <a href="https://instagram.com/reform_jhs" class="w3-quarter">
+        <img src="./Instagram.png" alt="An image of the official Instagram logo. Clicking this image will lead you to the official Reform JHS Instagram Page." class="footerMargin"/>
+      </a>
+      <a href="mailto:jhsreformation@outlook.com" class="w3-xlarge">Email Reform JHS.</a>
+
+    </header>
+
+    <!-- <footer class="w3-container w3-theme-l1">
+      <p>Modal footer</p>
+    </footer> -->
+  </div>
+</div>
+
 
   <div class="w3-center">
     <h4 class="mainText">We are the Students.</h4>
@@ -581,83 +607,83 @@ crossorigin="anonymous"></script>
 </footer>
 
 <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
-<script>
-// Side navigation
-function w3_open() {
-  var x = document.getElementById("mySidebar");
-  x.style.width = "100%";
-  x.style.fontSize = "40px";
-  x.style.paddingTop = "10%";
-  x.style.display = "block";
-}
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+<!-- <script>
+// // Side navigation
+// function w3_open() {
+//   var x = document.getElementById("mySidebar");
+//   x.style.width = "100%";
+//   x.style.fontSize = "40px";
+//   x.style.paddingTop = "10%";
+//   x.style.display = "block";
+// }
+// function w3_close() {
+//   document.getElementById("mySidebar").style.display = "none";
+// }
 
-// Tabs
-function openCity(evt, cityName) {
-  var i;
-  var x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  var activebtn = document.getElementsByClassName("testbtn");
-  for (i = 0; i < x.length; i++) {
-    activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " w3-dark-grey";
-}
+// // Tabs
+// function openCity(evt, cityName) {
+//   var i;
+//   var x = document.getElementsByClassName("city");
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";
+//   }
+//   var activebtn = document.getElementsByClassName("testbtn");
+//   for (i = 0; i < x.length; i++) {
+//     activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+//   }
+//   document.getElementById(cityName).style.display = "block";
+//   evt.currentTarget.className += " w3-dark-grey";
+// }
 
-var mybtn = document.getElementsByClassName("testbtn")[0];
-mybtn.click();
+// var mybtn = document.getElementsByClassName("testbtn")[0];
+// mybtn.click();
 
-// Accordions
-function myAccFunc(id) {
-  var x = document.getElementById(id);
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else { 
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
+// // Accordions
+// function myAccFunc(id) {
+//   var x = document.getElementById(id);
+//   if (x.className.indexOf("w3-show") == -1) {
+//     x.className += " w3-show";
+//   } else { 
+//     x.className = x.className.replace(" w3-show", "");
+//   }
+// }
 
-// Slideshows
-var slideIndex = 1;
+// // Slideshows
+// var slideIndex = 1;
 
-function plusDivs(n) {
-  slideIndex = slideIndex + n;
-  showDivs(slideIndex);
-}
+// function plusDivs(n) {
+//   slideIndex = slideIndex + n;
+//   showDivs(slideIndex);
+// }
 
-function showDivs(n) {
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
+// function showDivs(n) {
+//   var x = document.getElementsByClassName("mySlides");
+//   if (n > x.length) {slideIndex = 1}    
+//   if (n < 1) {slideIndex = x.length} ;
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";  
+//   }
+//   x[slideIndex-1].style.display = "block";  
+// }
 
-showDivs(1);
+// showDivs(1);
 
-// Progress Bars
-function move() {
-  var elem = document.getElementById("myBar");   
-  var width = 5;
-  var id = setInterval(frame, 10);
-  function frame() {
-    if (width == 100) {
-      clearInterval(id);
-    } else {
-      width++; 
-      elem.style.width = width + '%'; 
-      elem.innerHTML = width * 1  + '%';
-    }
-  }
-}
-</script>
+// // Progress Bars
+// function move() {
+//   var elem = document.getElementById("myBar");   
+//   var width = 5;
+//   var id = setInterval(frame, 10);
+//   function frame() {
+//     if (width == 100) {
+//       clearInterval(id);
+//     } else {
+//       width++; 
+//       elem.style.width = width + '%'; 
+//       elem.innerHTML = width * 1  + '%';
+//     }
+//   }
+// }
+// </script> -->
 
 </body>
 </html>
